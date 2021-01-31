@@ -25,12 +25,12 @@ fun quadraticRootNumber(a: Double, b: Double, c: Double): Int {
  *
  * Получить строковую нотацию для оценки по пятибалльной системе
  */
-fun gradeNotation(grade: Int): String = when (grade) {
+fun gradeNotation(grade1: Int): String = when (grade1) {
     5 -> "отлично"
     4 -> "хорошо"
     3 -> "удовлетворительно"
     2 -> "неудовлетворительно"
-    else -> "несуществующая оценка $grade"
+    else -> "несуществующая оценка $grade1"
 }
 
 /**
@@ -63,7 +63,13 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  * Мой возраст. Для заданного 0 < n < 200, рассматриваемого как возраст человека,
  * вернуть строку вида: «21 год», «32 года», «12 лет».
  */
-fun ageDescription(age: Int): String = TODO()
+fun ageDescription(age: Int): String {
+    return when {
+        (age >= 21) && (age <= 24) -> "$age года"
+        (age / 10 == 0) || (age / 5 == 0) -> "$age лет"
+        else -> "Хз"
+    }
+}
 
 /**
  * Простая
