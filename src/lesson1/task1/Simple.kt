@@ -3,7 +3,6 @@
 package lesson1.task1
 
 import lesson2.task1.*
-import lesson2.task1.gradeNotation
 import kotlin.math.*
 
 /**
