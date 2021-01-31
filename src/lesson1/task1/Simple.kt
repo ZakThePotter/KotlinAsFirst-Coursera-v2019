@@ -3,6 +3,7 @@
 package lesson1.task1
 
 import lesson2.task1.*
+import lesson3.task1.*
 import kotlin.math.*
 
 /**
@@ -18,10 +19,14 @@ fun main() {
     //println("$source * $source = $result (?)")
     //println(seconds(8,20,35))
     //println(lengthInMeters(8, 2, 11))
-    val i = 0
+  /*  val i = 0
     for (i in 0..21) {
         println("$i = ${ageDescription(i)}")
-    }
+    } */
+    var n = 35
+    println(factorial(n))
+
+
 }
 
 /**
