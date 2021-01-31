@@ -20,8 +20,8 @@ fun main() {
     //println(seconds(8,20,35))
     //println(lengthInMeters(8, 2, 11))
     val i = 0
-    for (i in -1..200) {
-        println("$i " + ageDescription(i))
+    for (i in 0..21) {
+        println("$i = ${ageDescription(i)}")
     }
 }
 
