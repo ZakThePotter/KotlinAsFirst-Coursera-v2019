@@ -2,7 +2,28 @@
 
 package lesson1.task1
 
+import lesson2.task1.*
+import lesson2.task1.gradeNotation
 import kotlin.math.*
+
+/**
+ * Пример главной функции
+ */
+fun main() {
+    //val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
+    //println("Root product: $x1x2")
+
+    //val source = 9.1
+    //val result = sqr(source)
+    //println("result = $result")
+    //println("$source * $source = $result (?)")
+    //println(seconds(8,20,35))
+    //println(lengthInMeters(8, 2, 11))
+    val i = 0
+    for (i in -1..200) {
+        println("$i " + ageDescription(i))
+    }
+}
 
 /**
  * Пример
@@ -43,24 +64,6 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
     val x1 = (-b + sd) / (2 * a)
     val x2 = (-b - sd) / (2 * a)
     return x1 * x2 // Результат
-}
-
-/**
- * Пример главной функции
- */
-fun main() {
-    //val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
-    //println("Root product: $x1x2")
-
-    //val source = 9.1
-    //val result = sqr(source)
-    //println("result = $result")
-    //println("$source * $source = $result (?)")
-
-    //println(seconds(8,20,35))
-
-    println(lengthInMeters(8, 2, 11))
-
 }
 
 /**
